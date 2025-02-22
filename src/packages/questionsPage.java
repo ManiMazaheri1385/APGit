@@ -9,7 +9,11 @@ public class questionsPage {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
+        panel.setBorder(BorderFactory.createEmptyBorder(15, 20, 55, 30));
+        panel.setBackground(new Color(0xFFEE8C));
+
+        //Create font
+        Font font = new Font("Arial", Font.BOLD, 20);
 
         // Question 1
         JLabel question1 = new JLabel("چقدر رابط کاربری نرم افزار از نظر شما جذاب است؟");
