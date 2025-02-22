@@ -40,6 +40,11 @@ public class informationPage {
         JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");
         levelLabel.setBounds(10, 130, 250, 20);
 
+        // Create the button panel
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.X_AXIS));
+
+        // Radio Buttons
         JRadioButton level1 = new JRadioButton("مبتدی");
         level1.setBounds(10, 160, 100, 20);
         JRadioButton level2 = new JRadioButton("متوسط");
