@@ -24,7 +24,7 @@ public class questionsPage {
         buttonPanel1.setLayout(new BoxLayout(buttonPanel1, BoxLayout.X_AXIS));
 
         JRadioButton radio1_1 = new JRadioButton("۱");
-        radio1_1.setBounds(10, 40, 100, 20);
+        radio1_1.setFont(font);
         JRadioButton radio1_2 = new JRadioButton("۲");
         radio1_2.setBounds(80, 40, 100, 20);
         JRadioButton radio1_3 = new JRadioButton("۳");
