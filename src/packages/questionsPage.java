@@ -7,6 +7,7 @@ public class questionsPage {
     public void create(JFrame frame) {
         // Create and configure the panel
         JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(null);
 
