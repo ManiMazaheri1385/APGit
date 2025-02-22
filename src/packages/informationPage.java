@@ -95,10 +95,9 @@ public class informationPage {
         panel.add(emailLabel);
         panel.add(emailField);
         panel.add(levelLabel);
-        panel.add(level1);
-        panel.add(level2);
-        panel.add(level3);
-        panel.add(level4);
+        panel.add(Box.createRigidArea(new Dimension(6, 6)));
+        panel.add(buttonPanel);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
         panel.add(nextButton);
 
         // Add panel to the frame
