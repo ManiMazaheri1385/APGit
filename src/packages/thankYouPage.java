@@ -10,6 +10,11 @@ public class thankYouPage {
         JPanel panel = new JPanel();
         panel.setLayout(null);
         panel.setBounds(0, 0, 600, 600);
+        panel.setBorder(BorderFactory.createEmptyBorder(220, 0, 300, 0));
+        panel.setBackground(new Color(0xFFEE8C));
+
+        //Create font
+        Font font = new Font("Arial", Font.BOLD, 25);
 
         // Create thank you label
         JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
