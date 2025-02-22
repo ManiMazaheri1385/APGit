@@ -135,11 +135,10 @@ public class questionsPage {
 
         // Add components to the panel
         panel.add(question1);
-        panel.add(radio1_1);
-        panel.add(radio1_2);
-        panel.add(radio1_3);
-        panel.add(radio1_4);
-        panel.add(radio1_5);
+        panel.add(Box.createRigidArea(new Dimension(6, 6)));
+        panel.add(buttonPanel1);
+
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
 
         panel.add(question2);
         panel.add(radio2_1);
