@@ -21,7 +21,7 @@ public class thankYouPage {
         thankYouLabel.setBounds(10, 10, 200, 20);
 
         // Add components to the panel
-        panel.add(thankYouLabel);
+        panel.add(thankYouLabel, BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);
