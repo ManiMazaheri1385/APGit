@@ -20,7 +20,9 @@ public class informationPage {
         JLabel nameLabel = new JLabel("اسم");
         nameLabel.setBounds(10, 10, 100, 20);
         JTextField nameField = new JTextField(15);
-        nameField.setBounds(50, 10, 100, 20);
+        nameField.setFont(fieldFont);
+        nameLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
+        nameField.setAlignmentX(JTextField.CENTER_ALIGNMENT);
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("سن");
