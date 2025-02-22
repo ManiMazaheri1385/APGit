@@ -56,6 +56,15 @@ public class informationPage {
         group.add(level3);
         group.add(level4);
 
+        // Add buttons to the button panel
+        buttonPanel.add(level1);
+        buttonPanel.add(Box.createRigidArea(new Dimension(5, 5)));
+        buttonPanel.add(level2);
+        buttonPanel.add(Box.createRigidArea(new Dimension(5, 5)));
+        buttonPanel.add(level3);
+        buttonPanel.add(Box.createRigidArea(new Dimension(5, 5)));
+        buttonPanel.add(level4);
+
         // Next Page Button
         JButton nextButton = new JButton("صفحه بعد");
         nextButton.setBounds(10, 200, 100, 20);
