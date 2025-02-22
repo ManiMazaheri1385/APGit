@@ -41,6 +41,16 @@ public class questionsPage {
         group1.add(radio1_4);
         group1.add(radio1_5);
 
+        buttonPanel1.add(radio1_1);
+        buttonPanel1.add(Box.createRigidArea(new Dimension(5, 5)));
+        buttonPanel1.add(radio1_2);
+        buttonPanel1.add(Box.createRigidArea(new Dimension(5, 5)));
+        buttonPanel1.add(radio1_3);
+        buttonPanel1.add(Box.createRigidArea(new Dimension(5, 5)));
+        buttonPanel1.add(radio1_4);
+        buttonPanel1.add(Box.createRigidArea(new Dimension(5, 5)));
+        buttonPanel1.add(radio1_5);
+
         // Question 2
         JLabel question2 = new JLabel("آیا دسترسی به امکانات مختلف نرم افزار برای شما آسان است؟");
         question2.setBounds(10, 90, 300, 20);
