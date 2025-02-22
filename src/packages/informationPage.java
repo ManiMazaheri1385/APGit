@@ -88,6 +88,7 @@ public class informationPage {
 
         // Add components to the panel
         panel.add(nameLabel);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
         panel.add(nameField);
         panel.add(ageLabel);
         panel.add(ageField);
