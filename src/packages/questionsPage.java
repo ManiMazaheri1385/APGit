@@ -17,7 +17,11 @@ public class questionsPage {
 
         // Question 1
         JLabel question1 = new JLabel("چقدر رابط کاربری نرم افزار از نظر شما جذاب است؟");
-        question1.setBounds(10, 10, 300, 20);
+        question1.setFont(font);
+        question1.setAlignmentX(JLabel.CENTER_ALIGNMENT);
+
+        JPanel buttonPanel1 = new JPanel();
+        buttonPanel1.setLayout(new BoxLayout(buttonPanel1, BoxLayout.X_AXIS));
 
         JRadioButton radio1_1 = new JRadioButton("۱");
         radio1_1.setBounds(10, 40, 100, 20);
