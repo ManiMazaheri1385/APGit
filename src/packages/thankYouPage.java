@@ -1,6 +1,7 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class thankYouPage {
 
@@ -8,7 +9,7 @@ public class thankYouPage {
 
         // Create and configure the panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
+        panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
         panel.setBorder(BorderFactory.createEmptyBorder(220, 0, 300, 0));
         panel.setBackground(new Color(0xFFEE8C));
@@ -28,8 +29,5 @@ public class thankYouPage {
         // Add panel to the frame
         frame.add(panel);
 
-
     }
-
-
 }
