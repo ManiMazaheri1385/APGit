@@ -25,9 +25,5 @@ public class thankYouPage {
 
         // Add panel to the frame
         frame.add(panel);
-
-
     }
-
-
 }

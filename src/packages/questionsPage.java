@@ -47,7 +47,6 @@ public class questionsPage {
         question2.setFont(font);
         question2.setBounds(10, 90, 300, 20);
 
-
         JRadioButton radio2_1 = new JRadioButton("1");
         radio2_1.setFont(font);
         radio2_1.setBounds(10, 120, 100, 20);
