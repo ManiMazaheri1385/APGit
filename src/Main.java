@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import packages.informationPage;
 
+import java.awt.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,22 +19,29 @@ public class Main {
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
+        panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
+        panel.setBorder(BorderFactory.createEmptyBorder(220, 240, 300, 240));
+        panel.setBackground(new Color(0xFFEE8C));
 
         // Create title label
         JLabel title = new JLabel("Survey Form");
         title.setFont(font);
-        title.setBounds(10, 10, 100, 20);
+        title.setHorizontalAlignment(SwingConstants.CENTER);
+        title.setVerticalAlignment(SwingConstants.CENTER);
 
         // Create start button
         JButton startButton = new JButton("Start!");
         startButton.setFont(new Font("Arial", Font.BOLD, 20));
-        startButton.setBounds(10, 40, 100, 20);
+        startButton.setHorizontalAlignment(SwingConstants.CENTER);
+        startButton.setVerticalAlignment(SwingConstants.CENTER);
+        startButton.setPreferredSize(new Dimension(100, 50));
+        startButton.setMinimumSize(new Dimension(100, 50));
+        startButton.setMaximumSize(new Dimension(100, 50));
 
         // Add components to the panel
-        panel.add(title);
-        panel.add(startButton);
+        panel.add(title, BorderLayout.NORTH);
+        panel.add(startButton, BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);

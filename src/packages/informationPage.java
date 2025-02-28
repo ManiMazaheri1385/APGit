@@ -8,8 +8,14 @@ public class informationPage {
     public void create(JFrame frame) {
         // Create the main panel
         JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
+        panel.setBorder(BorderFactory.createEmptyBorder(15, 20, 55, 30));
+        panel.setBackground(new Color(0xFFEE8C));
+
+        //Create font
+        Font font = new Font("Arial", Font.BOLD, 20);
+        Font fieldFont = new Font("Arial", Font.PLAIN, 17);
 
         // Create font
         Font font = new Font("Arial", Font.BOLD, 20);
@@ -18,45 +24,46 @@ public class informationPage {
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("Name");
         nameLabel.setFont(font);
-        nameLabel.setBounds(10, 10, 100, 20);
         JTextField nameField = new JTextField(15);
         nameField.setFont(fieldFont);
-        nameField.setBounds(50, 10, 100, 20);
+        nameLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
+        nameField.setAlignmentX(JTextField.CENTER_ALIGNMENT);
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("Age");
         ageLabel.setFont(font);
-        ageLabel.setBounds(10, 50, 100, 20);
         JTextField ageField = new JTextField(15);
         ageField.setFont(fieldFont);
-        ageField.setBounds(50, 50, 100, 20);
+        ageLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
+        ageField.setAlignmentX(JTextField.CENTER_ALIGNMENT);
 
         // Email Label and Text Field
         JLabel emailLabel = new JLabel("Email");
         emailLabel.setFont(font);
-        emailLabel.setBounds(10, 90, 100, 20);
         JTextField emailField = new JTextField(15);
         emailField.setFont(fieldFont);
-        emailField.setBounds(50, 90, 100, 20);
+        emailLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
+        emailField.setAlignmentX(JTextField.CENTER_ALIGNMENT);
 
         // Software Familiarity Level
         JLabel levelLabel = new JLabel("Level of familiarity with similar software");
         levelLabel.setFont(font);
-        levelLabel.setBounds(10, 130, 250, 20);
+        levelLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
 
+        // Create the button panel
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.X_AXIS));
+
+        // Radio Buttons
         JRadioButton level1 = new JRadioButton("Beginner");
         level1.setFont(font);
-        level1.setBounds(10, 160, 100, 20);
         JRadioButton level2 = new JRadioButton("Intermediate");
         level2.setFont(font);
-        level2.setBounds(100, 160, 100, 20);
         JRadioButton level3 = new JRadioButton("Advanced");
         level3.setFont(font);
-        level3.setBounds(190, 160, 100, 20);
         JRadioButton level4 = new JRadioButton("No familiarity");
         level4.setFont(font);
-        level4.setBounds(280, 160, 150, 20);
-
+      
         // Group the radio buttons
         ButtonGroup group = new ButtonGroup();
         group.add(level1);
@@ -64,10 +71,19 @@ public class informationPage {
         group.add(level3);
         group.add(level4);
 
+        // Add buttons to the button panel
+        buttonPanel.add(level1);
+        buttonPanel.add(Box.createRigidArea(new Dimension(5, 5)));
+        buttonPanel.add(level2);
+        buttonPanel.add(Box.createRigidArea(new Dimension(5, 5)));
+        buttonPanel.add(level3);
+        buttonPanel.add(Box.createRigidArea(new Dimension(5, 5)));
+        buttonPanel.add(level4);
+
         // Next Page Button
         JButton nextButton = new JButton("Next Page");
         nextButton.setFont(new Font("Arial", Font.BOLD, 14));
-        nextButton.setBounds(10, 200, 100, 20);
+        nextButton.setAlignmentX(JLabel.CENTER_ALIGNMENT);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);
@@ -83,16 +99,21 @@ public class informationPage {
 
         // Add components to the panel
         panel.add(nameLabel);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
         panel.add(nameField);
+        panel.add(Box.createRigidArea(new Dimension(15, 15)));
         panel.add(ageLabel);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
         panel.add(ageField);
+        panel.add(Box.createRigidArea(new Dimension(15, 15)));
         panel.add(emailLabel);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
         panel.add(emailField);
+        panel.add(Box.createRigidArea(new Dimension(15, 15)));
         panel.add(levelLabel);
-        panel.add(level1);
-        panel.add(level2);
-        panel.add(level3);
-        panel.add(level4);
+        panel.add(Box.createRigidArea(new Dimension(6, 6)));
+        panel.add(buttonPanel);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
         panel.add(nextButton);
 
         // Add panel to the frame
