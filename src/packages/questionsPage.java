@@ -13,11 +13,8 @@ public class questionsPage {
         panel.setBorder(BorderFactory.createEmptyBorder(15, 20, 55, 30));
         panel.setBackground(new Color(0xFFEE8C));
 
-        //Create font
-        Font font = new Font("Arial", Font.BOLD, 20);
-
         // Create font
-        Font font = new Font("Arial", Font.BOLD, 20);
+        Font font = new Font("Arial", Font.BOLD, 17);
 
         // Question 1
         JLabel question1 = new JLabel("How attractive do you find the software’s user interface?");
