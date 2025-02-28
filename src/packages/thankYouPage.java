@@ -6,7 +6,6 @@ import java.awt.*;
 public class thankYouPage {
 
     public void create(JFrame frame) {
-
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
@@ -17,8 +16,11 @@ public class thankYouPage {
         //Create font
         Font font = new Font("Arial", Font.BOLD, 25);
 
+        // Create font
+        Font font = new Font("Arial", Font.BOLD, 25);
+
         // Create thank you label
-        JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
+        JLabel thankYouLabel = new JLabel("Thank you for your participation!");
         thankYouLabel.setFont(font);
         thankYouLabel.setHorizontalAlignment(JLabel.CENTER);
         thankYouLabel.setVerticalAlignment(JLabel.CENTER);
@@ -28,6 +30,6 @@ public class thankYouPage {
 
         // Add panel to the frame
         frame.add(panel);
-
+      
     }
 }
