@@ -13,9 +13,6 @@ public class thankYouPage {
         panel.setBorder(BorderFactory.createEmptyBorder(220, 0, 300, 0));
         panel.setBackground(new Color(0xFFEE8C));
 
-        //Create font
-        Font font = new Font("Arial", Font.BOLD, 25);
-
         // Create font
         Font font = new Font("Arial", Font.BOLD, 25);
 
@@ -30,6 +27,5 @@ public class thankYouPage {
 
         // Add panel to the frame
         frame.add(panel);
-      
     }
 }
