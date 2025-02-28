@@ -2,8 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import packages.informationPage;
 
-import java.awt.*;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -14,14 +12,14 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
-        //Create font
-        Font font = new Font("Arial", Font.BOLD, 25);
+        // Create font
+        Font font = new Font("Arial", Font.BOLD, 22);
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
-        panel.setBorder(BorderFactory.createEmptyBorder(220, 240, 300, 240));
+        panel.setBorder(BorderFactory.createEmptyBorder(220, 230, 300, 230));
         panel.setBackground(new Color(0xFFEE8C));
 
         // Create title label
