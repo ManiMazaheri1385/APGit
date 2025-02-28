@@ -13,12 +13,8 @@ public class informationPage {
         panel.setBorder(BorderFactory.createEmptyBorder(15, 20, 55, 30));
         panel.setBackground(new Color(0xFFEE8C));
 
-        //Create font
-        Font font = new Font("Arial", Font.BOLD, 20);
-        Font fieldFont = new Font("Arial", Font.PLAIN, 17);
-
         // Create font
-        Font font = new Font("Arial", Font.BOLD, 20);
+        Font font = new Font("Arial", Font.BOLD, 17);
         Font fieldFont = new Font("Arial", Font.PLAIN, 17);
 
         // Name Label and Text Field
